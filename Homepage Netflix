@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Recently Added</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Netflix</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <button class="cta-btn">Get Started</button>
+            </div>
+        </section>
+        <section class="content">
+            <h2>Popular on Netflix</h2>
+            <div class="movies">
+                <div class="movie"><img src="movie1.jpg" alt="Movie 1"></div>
+                <div class="movie"><img src="movie2.jpg" alt="Movie 2"></div>
+                <div class="movie"><img src="movie3.jpg" alt="Movie 3"></div>
+                <div class="movie"><img src="movie4.jpg" alt="Movie 4"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    background-color: #141414;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 60vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/ff7fc527-2b94-4d8d-8fc6-8ef3fcb0a6a8/d180ca0e-180f-4af0-8164-4562b14d41ee/VL-en-20230717-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #f40612;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.movies {
+    display: flex;
+    gap: 10px;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
